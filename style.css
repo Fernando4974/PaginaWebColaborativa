@@ -3,130 +3,154 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* 🔹 HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1f2937;
-    padding: 20px 10%;
-}
-
-header .logo img {
-    max-width: 150px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #38bdf8;
-}
-
-/* 🔹 SECCIONES */
-section {
+/* 🔹 Sección General */
+#sobre-nosotros {
     padding: 60px 10%;
     text-align: center;
 }
 
-/* 🔹 SECCIÓN NOSOTROS */
-.contenedor-nosotros {
+/* 🔹 Historia */
+.historia {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Misión, Visión y Valores */
+.mision-vision-valores {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mision, .vision, .valores {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+/* 🔹 SECCIÓN EQUIPO */
+.equipo {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.equipo h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* 🔹 CONTENEDOR FLEXIBLE PARA LOS MIEMBROS */
+.miembros {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    gap: 30px; /* Espacio entre miembros */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* 🔹 ESTILO PARA CADA MIEMBRO */
+.miembro {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px; /* Evita que sean demasiado anchos */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.miembro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 IMÁGENES REDONDEADAS */
+.miembro img {
+    width: 100%;
+    max-width: 150px; /* Tamaño máximo */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* 🔹 TEXTO DE LOS MIEMBROS */
+.miembro h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.miembro p {
+    font-size: 1em;
+    color: #666;
+}
+/* 🔹 SECCIÓN COMENTARIOS */
+#comentarios {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+#comentarios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* 🔹 CONTENEDOR DE COMENTARIOS */
+.contenedor-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 🔹 ESTILO PARA CADA COMENTARIO */
+.comentario {
     display: flex;
     align-items: center;
-    gap: 30px;
-    justify-content: center;
-}
-
-.contenedor-nosotros img {
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* 🔹 SECCIÓN SERVICIOS */
-.contenedor-servicios {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.servicio {
-    background: white;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    max-width: 300px;
+    max-width: 600px;
+    width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 15px;
 }
 
-.servicio img {
-    max-width: 80px;
-    margin-bottom: 10px;
+.comentario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-/* 🔹 SECCIÓN PORTAFOLIO */
-.contenedor-portafolio {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+.contenido-comentario h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
 }
 
-.proyecto {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.contenido-comentario p {
+    font-size: 1em;
+    color: #666;
 }
 
-.proyecto img {
-    max-width: 100%;
-    border-radius: 10px;
+/* 🔹 FORMULARIO PARA NUEVOS COMENTARIOS */
+.formulario-comentarios {
+    margin-top: 40px;
 }
 
-/* 🔹 SECCIÓN CLIENTES */
-.contenedor-clientes {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+.formulario-comentarios h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
 }
 
-.contenedor-clientes img {
-    max-width: 150px;
-    filter: grayscale(100%);
-    transition: filter 0.3s;
-}
-
-.contenedor-clientes img:hover {
-    filter: grayscale(0%);
-}
-
-/* 🔹 SECCIÓN CONTACTO */
 form {
     display: flex;
     flex-direction: column;
@@ -142,6 +166,10 @@ form input, form textarea {
     border-radius: 5px;
 }
 
+form textarea {
+    height: 100px;
+}
+
 form button {
     padding: 10px;
     background-color: #38bdf8;
@@ -155,3 +183,4 @@ form button {
 form button:hover {
     background-color: #1e3a8a;
 }
+

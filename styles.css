@@ -1,0 +1,135 @@
+
+:root {
+    --rojo-oscuro: #780000;
+    --rojo-intenso: #C1121F;
+    --amarillo-claro: #FDF0D5;
+    --azul-oscuro: #003049;
+    --azul-suave: #669BBC;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--amarillo-claro);
+    margin: 0;
+    padding: 0;
+    color: var(--azul-oscuro);
+  }
+  
+  header {
+    background-color: var(--rojo-oscuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    color: var(--rojo-intenso);
+    padding: 20px 0;
+    font-size: 2em;
+  }
+  
+  
+  #servicios .service {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #servicios .service h3 {
+    color: var(--rojo-intenso);
+    font-size: 1.8em;
+  }
+  
+  #servicios .service p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  #servicios .service ul {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 1.1em;
+  }
+  
+  
+  #casos-de-exito .case {
+    background-color: var(--azul-suave);
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #casos-de-exito .case h4 {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  #casos-de-exito .case p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  #casos-de-exito img {
+    display: block;
+    margin: 20px auto;
+    width: 30%; 
+    border-radius: 8px;
+  }
+  
+ 
+#soluciones {
+    background-color: var(--rojo-oscuro);
+    padding: 40px 20px;
+    border-top: 5px solid var(--rojo-intenso); 
+  }
+  
+  #soluciones .solution {
+    background-color: white; 
+    color: var(--azul-oscuro); 
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #soluciones .solution h3 {
+    color: var(--rojo-intenso); 
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  #soluciones .solution p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
+  #soluciones .solution ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1em;
+  }
+  
+  #soluciones .solution ul li {
+    margin-bottom: 10px; 
+  }
+  
+  #soluciones .solution img {
+    display: block;
+    margin: 20px auto;
+    width: 40%; 
+    border-radius: 8px;
+  }
+  
+  

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Soluciones Tecnológicas</title>
+    <style>
+        :root {
+            --rojo-oscuro: #780000;
+            --rojo-intenso: #C1121F;
+            --amarillo-claro: #669BBC;
+            --azul-oscuro: #003049;
+            --azul-suave: #669BBC;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--amarillo-claro);
+            margin: 0;
+            padding: 0;
+            color: var(--azul-oscuro);
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: var(--rojo-intenso);
+        }
+
+        .faq-section {
+            margin-top: 20px;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--azul-suave);
+            padding-bottom: 15px;
+        }
+
+        .faq h3 {
+            font-size: 1.5rem;
+            color: var(--azul-oscuro);
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .faq h3:hover {
+            background-color: var(--azul-suave);
+            color: white;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-left: 20px;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: var(--azul-oscuro);
+        }
+
+        .faq.active .faq-answer {
+            display: block;
+        }
+
+        .faq-answer p {
+            line-height: 1.6;
+        }
+
+        .faq-answer ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .faq-answer li {
+            margin-bottom: 5px;
+        }
+
+       
+        .faq-answer {
+            background-color: var(--amarillo-claro);
+            padding: 15px;
+            border-left: 5px solid var(--rojo-intenso);
+        }
+
+        .faq-answer p {
+            margin-bottom: 10px;
+            color: var(--azul-oscuro);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Preguntas Frecuentes</h1>
+        
+        <div class="faq-section">
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Qué es la ciberseguridad y por qué es importante para mi empresa?</h3>
+                <div class="faq-answer">
+                    <p>La ciberseguridad es el conjunto de prácticas y tecnologías diseñadas para proteger las redes, dispositivos, sistemas y datos de tu empresa contra ciberataques. Es fundamental para proteger la información sensible y garantizar la continuidad de las operaciones de negocio. En nuestra empresa, ofrecemos soluciones avanzadas para prevenir, detectar y responder a amenazas cibernéticas.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Qué es la transformación digital y cómo beneficia a mi negocio?</h3>
+                <div class="faq-answer">
+                    <p>La transformación digital implica la adopción de tecnologías digitales para mejorar los procesos, servicios y modelos de negocio. Al implementar herramientas como la automatización, análisis de datos, y la nube, puedes aumentar la eficiencia operativa, reducir costos y ofrecer una mejor experiencia al cliente. Ayudamos a las empresas a dar el salto hacia la digitalización de forma efectiva y estratégica.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Qué servicios de desarrollo de software ofrecen?</h3>
+                <div class="faq-answer">
+                    <p>Ofrecemos servicios de desarrollo de software personalizados para satisfacer las necesidades específicas de tu negocio. Esto incluye el desarrollo de aplicaciones web, móviles, y soluciones integrales que optimizan los procesos internos y externos. Nuestro equipo trabaja para crear plataformas escalables, seguras y fáciles de usar.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Qué significa el desarrollo de software a medida y en qué me beneficia?</h3>
+                <div class="faq-answer">
+                    <p>El desarrollo de software a medida se refiere a la creación de soluciones tecnológicas personalizadas según las necesidades específicas de tu empresa. Esto asegura que el software se ajuste perfectamente a tus procesos, ofreciendo mayores ventajas en cuanto a eficiencia, funcionalidad y escalabilidad. Te ayudamos a crear herramientas que estén alineadas con los objetivos estratégicos de tu negocio.</p>
+                </div>
+            </div>
+
+            <!-- Nuevas preguntas añadidas -->
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Cuánto tiempo toma implementar una solución de ciberseguridad?</h3>
+                <div class="faq-answer">
+                    <p>El tiempo necesario para implementar una solución de ciberseguridad varía según las necesidades específicas de cada empresa. Generalmente, las soluciones pueden ser implementadas en un plazo de semanas a meses, dependiendo de la complejidad de los sistemas y el nivel de personalización requerido.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Qué herramientas utilizáis para el desarrollo de software?</h3>
+                <div class="faq-answer">
+                    <p>En nuestra empresa utilizamos una variedad de herramientas y tecnologías, incluyendo lenguajes de programación como Java, Python, JavaScript, y frameworks como React, Angular y Django, entre otros. Elegimos las mejores herramientas según las necesidades del proyecto y los requisitos del cliente.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Ofrecen soporte post implementación?</h3>
+                <div class="faq-answer">
+                    <p>Sí, ofrecemos soporte post implementación para asegurar que nuestras soluciones sigan funcionando de manera óptima. Esto incluye mantenimiento regular, actualizaciones y ajustes según sea necesario, así como soporte técnico en caso de cualquier incidencia.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Puedo integrar sus soluciones con mi sistema actual?</h3>
+                <div class="faq-answer">
+                    <p>Sí, nuestras soluciones están diseñadas para ser flexibles y adaptarse a los sistemas existentes. Realizamos una evaluación previa para asegurarnos de que nuestras soluciones se integren sin problemas a tus plataformas y procesos ya implementados.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <h3 onclick="toggleAnswer(this)">¿Qué ventajas tiene la transformación digital para mi empresa?</h3>
+                <div class="faq-answer">
+                    <p>La transformación digital puede ofrecer múltiples ventajas, como una mayor eficiencia operativa, mejor toma de decisiones gracias a los datos, reducción de costos, una mayor satisfacción del cliente y la capacidad de ofrecer nuevos productos o servicios innovadores. Es una forma de mantenerse competitivo en un mundo empresarial cada vez más digitalizado.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const faq = element.parentElement;
+            faq.classList.toggle('active');
+            const answer = faq.querySelector('.faq-answer');
+            if (faq.classList.contains('active')) {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

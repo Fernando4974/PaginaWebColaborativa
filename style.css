@@ -1,0 +1,239 @@
+/* 🔹 RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 🔹 Sección General */
+#sobre-nosotros {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+/* 🔹 Historia */
+.historia {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Misión, Visión y Valores */
+.mision-vision-valores {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.mision, .vision, .valores {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+/* 🔹 SECCIÓN EQUIPO */
+.equipo {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+.equipo h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* 🔹 CONTENEDOR FLEXIBLE PARA LOS MIEMBROS */
+.miembros {
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+    gap: 30px; /* Espacio entre miembros */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+/* 🔹 ESTILO PARA CADA MIEMBRO */
+.miembro {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 250px; /* Evita que sean demasiado anchos */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.miembro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 IMÁGENES REDONDEADAS */
+.miembro img {
+    width: 100%;
+    max-width: 150px; /* Tamaño máximo */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* 🔹 TEXTO DE LOS MIEMBROS */
+.miembro h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.miembro p {
+    font-size: 1em;
+    color: #666;
+}
+/* 🔹 SECCIÓN COMENTARIOS */
+#comentarios {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+#comentarios h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* 🔹 CONTENEDOR DE COMENTARIOS */
+.contenedor-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* 🔹 ESTILO PARA CADA COMENTARIO */
+.comentario {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+}
+
+.comentario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contenido-comentario h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.contenido-comentario p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* 🔹 FORMULARIO PARA NUEVOS COMENTARIOS */
+.formulario-comentarios {
+    margin-top: 40px;
+}
+
+.formulario-comentarios h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #080808;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #ffffff;
+}
+
+/* 🔹 SECCIÓN PORTAFOLIO */
+#portafolio {
+    text-align: center;
+    padding: 60px 10%;
+    background: linear-gradient(to right, #ffffff, #f8f8fa);
+    color: white;
+}
+
+/* 🔹 CONTENEDOR FLEXIBLE */
+.contenedor-portafolio {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* 🔹 ESTILO PARA CADA PROYECTO */
+.proyecto {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 IMÁGENES DE LOS PROYECTOS */
+.proyecto img {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* 🔹 TEXTO DE LOS PROYECTOS */
+.proyecto h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #1e3a8a;
+}
+
+.proyecto p {
+    font-size: 1em;
+    color: #666;
+}

@@ -1,8 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fdf0d5;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  color: #000;
 }
 
 header {
@@ -50,13 +51,13 @@ nav a:hover {
 
 main {
   padding: 20px;
-  background-color: #fdf0d5;
+  background-color: #ffffff;
   min-height: 400px;
 }
 
 footer {
   background-color: #780000;
-  color: #fdf0d5;
+  color: #ffffff;
   text-align: center;
   padding: 20px 0;
 }
@@ -77,7 +78,7 @@ footer {
 }
 
 .footer-content a {
-  color: #fdf0d5;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
@@ -87,80 +88,148 @@ footer {
   color: #003049;
 }
 
-.video-container {
-  text-align: center;
+#noticias-contacto-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
   padding: 20px;
-  background-color: #fdf0d5;
+  flex-wrap: wrap;
+}
+
+.video-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
   border-top: 3px solid #003049;
+  max-width: 800px;
 }
 
-.video-container h2 {
-  color: #003049;
-  margin-bottom: 20px;
-  font-size: 28px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-video {
+.video-container video {
+  width: 100%;
   max-width: 100%;
   border: 3px solid #003049;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Últimas Noticias */
-#noticias {
-  background-color: #669bbc;
-  padding: 30px;
-  margin: 40px auto;
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 15px;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 900px;
+}
+
+.video-wrapper video {
+  width: 30%;
+  max-width: 520px;
+  border-radius: 10px;
+  border: 3px solid #003049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#noticias {
+  flex: 1;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 3px solid #003049;
 }
 
 #noticias h2 {
-  color: #003049;
   text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 25px;
+  color: #003049;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-#noticias article {
+.noticias-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.noticias-container article {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
-  margin-bottom: 15px;
   border-left: 6px solid #780000;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 30%;
+  min-width: 280px;
 }
 
-#noticias article:hover {
+.noticias-container article:hover {
   transform: scale(1.03);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#noticias article h3 {
-  color: #003049;
-  margin: 0 0 10px;
-  font-size: 22px;
+#contacto {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #000;
+  background-color: #ffffff;
 }
 
-#noticias article p {
-  color: #000;
-  margin: 0 0 10px;
-  font-size: 18px;
+#contacto form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-#noticias article a {
-  color: #780000;
-  text-decoration: none;
+#contacto label {
+  width: 100%;
+  text-align: left;
   font-weight: bold;
-  transition: color 0.3s;
+  margin-bottom: 5px;
 }
 
-#noticias article a:hover {
-  color: #003049;
-  text-decoration: underline;
+#contacto input, #contacto textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contacto textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#contacto button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #003049;
+  color: #fdf0d5;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+  background-color: #00557a;
+}
+
+#contacto iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border: 1px solid #000;
+  margin-top: 20px;
 }

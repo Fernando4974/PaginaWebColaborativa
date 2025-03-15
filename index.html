@@ -14,52 +14,94 @@
 
     <nav id="nav">
       <a href="index.html">Inicio</a>
-      <a href="sobreNosotros.html">Sobre Nosotros</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="soluciones.html">Soluciones</a>
-      <a href="testimonios.html">Testimonios</a>
-      <a href="noticias.html">Noticias</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="portafolio.html#sobre-nosotros">Sobre Nosotros</a>
+      <a href="soluciones.html#servicios">Servicios</a>
+      <a href="soluciones.html#soluciones">Soluciones</a>
+      <a href="soluciones.html#casos-de-exito">Testimonios</a>
+      <a href="index.html#noticias">Noticias</a>
+      <a href="index.html#contacto">Contacto</a>
       <a href="preguntas.html">Preguntas</a>
-      <a href="portafolio.html">Portafolio</a>
-      <a href="areadeclientes.html">Clientes</a>
+      <a href="portafolio.html#portafolio1">Portafolio</a>
+      <a href="clientes.html">Clientes</a>
     </nav>
 
-    <main>
-      <section id="intro">
-        <h2>Bienvenido a TechSolutions</h2>
-        <p>
-          En TechSolutions, ofrecemos soluciones tecnológicas innovadoras para impulsar
-          el crecimiento y la eficiencia de tu negocio. Desde desarrollo de software
-          hasta infraestructuras IT, estamos aquí para ayudarte.
-        </p>
-        <button id="cta" onclick="location.href='contacto.html'">Contáctanos</button>
-      </section>
-
-      <div class="video-container">
-        <video controls autoplay muted>
+   <div class="contenido">
+    <!-- SOLO aqui CHATGPT -->
+    <section id="video-destacado">
+      <h2 style="text-align: center; font-size: 100px;">Bienvenidos</h2>
+      <div class="video-wrapper">
+        <video controls autoplay muted style="size: 900px;">
           <source src="./videos/video.mp4" type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
         </video>
+       
+        <video controls autoplay muted>
+          <source src="./videos/video2.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de videos.
+        </video>
+      
+        <video controls autoplay muted>
+          <source src="./videos/video3.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de videos.
+        </video>
+  
       </div>
-
-      <section id="noticias">
-        <h2>Últimas Noticias</h2>
+    </section>
+    
+    <section id="noticias" style="padding: 20px;">
+      <h2>Últimas Noticias</h2>
+      <div class="noticias-container">
         <article>
-          <h3>Las tendencias tecnológicas del 2025</h3>
-          <p>Descubre qué tecnologías marcarán la diferencia en el próximo año.</p>
-          <a href="noticias.html">Leer más</a>
+          <h3>🔍 Inteligencia Artificial en 2025</h3>
+          <p>La IA está revolucionando la industria, descubre las tendencias más recientes.</p>
+          <a href="https://usbmed.edu.co/" target="_blank">Leer más</a>
         </article>
+        
         <article>
-          <h3>Consejos para mejorar la seguridad de tu empresa</h3>
-          <p>Aprende cómo proteger los datos de tu negocio con estos consejos clave.</p>
-          <a href="noticias.html">Leer más</a>
+          <h3>🛡️ Seguridad Cibernética Avanzada</h3>
+          <p>Conoce las estrategias clave para proteger tu empresa contra ataques digitales.</p>
+          <a href="https://usbmed.edu.co/" target="_blank">Leer más</a>
         </article>
+        
         <article>
-          <h3>Novedades en TechSolutions</h3>
-          <p>Conoce las últimas actualizaciones y mejoras en nuestros servicios.</p>
-          <a href="noticias.html">Leer más</a>
+          <h3>🚀 TechSolutions: Innovación Continua</h3>
+          <p>Estamos desarrollando nuevas herramientas para optimizar tus procesos.</p>
+          <a href="https://usbmed.edu.co/ " target="_blank">Leer más</a>
         </article>
+      </div>
+    </section>
+    
+   </div>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes comunicarte con nosotros a través del siguiente formulario o visitarnos en nuestra oficina.</p>
+        
+        <form action="enviarFormulario.php" method="POST">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          
+          <button type="submit" disabled="true">Enviar</button>
+        </form>
+        
+        <h3>Ubicación</h3>
+        <p>Dirección: #104, Complejo Norte Carrera 68, Medellín, Antioquia</p>
+        <p>Teléfono:44442800</p>
+        
+        <h3>Mapa</h3>
+        <iframe 
+src="https://www.google.com/maps/place/SENA/@6.301984,-75.5686496,513m/data=!3m1!1e3!4m6!3m5!1s0x8e442f25d6670d4d:0x8043999e5e767b96!8m2!3d6.302048!4d-75.5685611!16s%2Fg%2F1trqj853?entry=ttu&g_ep=EgoyMDI1MDMxMi4wIKXMDSoASAFQAw%3D%3D"   
+          width="900" 
+          height="650" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
       </section>
     </main>
 
@@ -69,9 +111,10 @@
         <p>Contacto: contacto@techsolutions.com</p>
         <p>Síguenos en nuestras redes sociales:</p>
         <ul>
-          <li><a href="https://www.facebook.com/techsolutions">Facebook</a></li>
-          <li><a href="https://www.twitter.com/techsolutions">Twitter</a></li>
-          <li><a href="https://www.instagram.com/techsolutions">Instagram</a></li>
+          <li><a href="https://www.facebook.com/SENA" target="_blank">Facebook</a></li>
+          <li><a href="https://x.com/SENAComunica"target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com/senacomunica/"target="_blank">Instagram</a></li>
+          
         </ul>
       </div>
     </footer>

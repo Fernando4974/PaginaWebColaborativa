@@ -233,3 +233,23 @@ footer {
   border: 1px solid #000;
   margin-top: 20px;
 }
+.video-wrapper {
+  display: flex; /* Alinea los videos en fila */
+  justify-content: center; /* Centra los videos horizontalmente */
+  gap: 20px; /* Espacio entre los videos */
+  flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper iframe {
+  width: 30%; /* Cada video ocupa el 30% del ancho */
+  min-width: 320px; /* Evita que los videos sean demasiado pequeños */
+  max-width: 640px; /* Ancho máximo */
+  height: 360px; /* Altura fija */
+  border-radius: 10px;
+  border: 3px solid #003049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

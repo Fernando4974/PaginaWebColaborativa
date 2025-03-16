@@ -253,3 +253,37 @@ footer {
   border: 3px solid #003049;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.video-wrapper {
+  display: flex; /* Coloca los videos en fila */
+  justify-content: center; /* Centra los videos horizontalmente */
+  gap: 20px; /* Espacio entre los videos */
+  flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper iframe {
+  flex: 1; /* Permite que los videos se expandan */
+  min-width: 400px; /* Tamaño mínimo para que no se vean muy pequeños */
+  max-width: 600px; /* Tamaño máximo */
+  height: 360px; /* Altura fija */
+  border-radius: 10px;
+  border: 3px solid #003049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste para pantallas pequeñas (móviles) */
+@media screen and (max-width: 900px) {
+  .video-wrapper {
+    flex-direction: column; /* Apila los videos en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .video-wrapper iframe {
+    width: 90%; /* Ocupa el 90% de la pantalla en móviles */
+    min-width: auto;
+  }
+}
+
